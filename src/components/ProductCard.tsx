@@ -22,8 +22,10 @@ export default function ProductCard({
     setIsMounted(true);
   }, []);
 
-  if (isMounted === false)
-    return <Skeleton className="w-full h-[300px] lg:h-[500px] animate-pulse" />;
+  if (!isMounted)
+    return (
+      <Skeleton className="w-full h-[300px] lg:h-[500px] animate-pulse bg-peach" />
+    );
   return (
     <Link
       className="w-full flex lg:h-auto lg:self-stretch flex-col tiems-center bg-lightestpeach border border-black/10 rounded-lg
