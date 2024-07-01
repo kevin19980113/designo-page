@@ -11,13 +11,13 @@ export default function Navbar() {
   return (
     <MaxwidthWrapper>
       <div className="w-full flex items-center justify-between py-4 md:py-8">
-        <Link href="/" className="cursor-pointer flex-shrink-0 ml-2">
+        <Link href="/" className="cursor-pointer flex-shrink-0 ml-2 group">
           <Image
             src={logoImg}
             alt="logo"
             width={100}
             height={100}
-            className="w-auto h-auto"
+            className="w-auto h-auto group-hover:scale-110 transition-all"
           />
         </Link>
 

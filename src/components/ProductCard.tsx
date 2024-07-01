@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Skeleton } from "./ui/skeleton";
+import Link from "next/link";
+import { useContact } from "@/hooks/use-contact";
 
 export default function ProductCard({
   product,
@@ -14,6 +16,7 @@ export default function ProductCard({
   };
 }) {
   const [isMounted, setIsMounted] = useState(false);
+  const { setName, setDescription } = useContact();
 
   useEffect(() => {
     setIsMounted(true);
@@ -22,9 +25,14 @@ export default function ProductCard({
   if (isMounted === false)
     return <Skeleton className="w-full h-[300px] lg:h-[500px] animate-pulse" />;
   return (
-    <div
+    <Link
       className="w-full flex flex-col tiems-center bg-lightestpeach border border-black/10 rounded-lg
     md:flex-row lg:flex-col hover:bg-peach group"
+      href="/contact"
+      onClick={() => {
+        setName(product.name);
+        setDescription(product.description);
+      }}
     >
       <Image
         src={product.image}
@@ -41,6 +49,6 @@ export default function ProductCard({
           {product.description}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
