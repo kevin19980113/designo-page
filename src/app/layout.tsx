@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Toaster position="top-center" />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );

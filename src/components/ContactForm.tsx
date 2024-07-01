@@ -49,9 +49,11 @@ export default function ContactForm() {
     );
     if (validatingErrorMessages) {
       //
+      return;
     }
     if (sendingErrorMessage) {
-      //
+      toast.error("Something went wrong, Failed to send the email.");
+      return;
     }
 
     toast.success("Email has been sent successfully");
