@@ -122,6 +122,17 @@ const config = {
           "url('/assets/about/mobile/image-real-deal.jpg')",
         "tablet-about-image-real-deal":
           "url('/assets/about/tablet/image-real-deal.jpg')",
+        "tablet-map-canada":
+          "url('/assets/locations/tablet/image-map-canada.png')",
+        "tablet-map-uk": "url('/assets/locations/tablet/image-map-uk.png')",
+        "tablet-map-australia":
+          "url('/assets/locations/tablet/image-map-australia.png')",
+        "desktop-map-canada":
+          "url('/assets/locations/desktop/image-map-canada.png')",
+        "desktop-map-uk":
+          "url('/assets/locations/desktop/image-map-united-kingdom.png')",
+        "desktop-map-australia":
+          "url('/assets/locations/desktop/image-map-australia.png')",
       },
     },
   },

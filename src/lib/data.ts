@@ -179,13 +179,23 @@ export const locations = [
   {
     name: "CANADA",
     image: "/assets/shared/desktop/illustration-canada.svg",
+    office: [
+      "Designo Central Office",
+      "3886 Wellington Street Toronto",
+      "Ontario M9C 3J5",
+    ],
+    contacts: ["P : +1 253-863-8967", "M : contact@designo.co"],
   },
   {
     name: "AUSTRALIA",
     image: "/assets/shared/desktop/illustration-australia.svg",
+    office: ["Designo AU Office", "19 Balonne Street", "New South Wales 2443"],
+    contacts: ["P : (02) 6720 9092", "M : contact@designo.au"],
   },
   {
     name: "UNITED KINGDOM",
     image: "/assets/shared/desktop/illustration-united-kingdom.svg",
+    office: ["Designo UK Office", "13 Colorado Way", "Rhyd-y-fro SA8 9GA"],
+    contacts: ["P : 078 3115 1400", "M : contact@designo.uk"],
   },
 ];
