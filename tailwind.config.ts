@@ -104,6 +104,24 @@ const config = {
           "url('/assets/home/desktop/bg-pattern-hero-home.svg')",
         "action-pattern":
           "url('/assets/shared/desktop/bg-pattern-call-to-action.svg')",
+        "three-circles-pattern":
+          "url('/assets/shared/desktop/bg-pattern-three-circles.svg')",
+        "desktop-about-hero":
+          "url('/assets/about/desktop/image-about-hero.jpg')",
+        "tablet-about-hero": "url('/assets/about/tablet/image-about-hero.jpg')",
+        "mobile-about-hero": "url('/assets/about/mobile/image-about-hero.jpg')",
+        "desktop-about-image-world-class-talent":
+          "url('/assets/about/desktop/image-world-class-talent.jpg')",
+        "mobile-about-image-world-class-talent":
+          "url('/assets/about/mobile/image-world-class-talent.jpg')",
+        "tablet-about-image-world-class-talent":
+          "url('/assets/about/tablet/image-world-class-talent.jpg')",
+        "desktop-about-image-real-deal":
+          "url('/assets/about/desktop/image-real-deal.jpg')",
+        "mobile-about-image-real-deal":
+          "url('/assets/about/mobile/image-real-deal.jpg')",
+        "tablet-about-image-real-deal":
+          "url('/assets/about/tablet/image-real-deal.jpg')",
       },
     },
   },

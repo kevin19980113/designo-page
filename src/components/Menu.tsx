@@ -8,10 +8,13 @@ import logoImg from "../../public/assets/shared/desktop/logo-dark.png";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Menu() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet onOpenChange={() => setOpen(!open)} open={open}>
       <SheetTrigger asChild className="md:hidden">
         <Button variant="ghost" size="icon">
           <MenuIcon />
@@ -34,6 +37,7 @@ export default function Menu() {
               width={100}
               height={100}
               className="w-auto h-auto"
+              onClick={() => setOpen(false)}
             />
           </Link>
         </div>
@@ -48,6 +52,7 @@ export default function Menu() {
                 }),
                 "text-lg text-white font-medium"
               )}
+              onClick={() => setOpen(false)}
             >
               {category.title}
             </Link>

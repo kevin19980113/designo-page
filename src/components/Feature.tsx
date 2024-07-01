@@ -23,8 +23,10 @@ export default function Feature({
       </div>
 
       <div className="flex flex-col items-center md:items-start gap-y-4 lg:items-center text-center md:text-left lg:text-center">
-        <h3 className="text-xl font-medium tracking-widest ">{title}</h3>
-        <p className="text-sm tracking-wide leading-6 max-w-72 md:max-w-prose">
+        <h3 className="text-xl font-medium tracking-widest xl:text-2xl">
+          {title}
+        </h3>
+        <p className="text-sm tracking-wide leading-6 max-w-72 md:max-w-prose xl:text-base">
           {description}
         </p>
       </div>

@@ -10,15 +10,15 @@ export default function Hero() {
     <MaxwidthWrapper className="px-0">
       <div
         className="w-full bg-peach flex flex-col lg:flex-row items-center px-4 pt-16 relative overflow-hidden 
-      max-w-screen-2xl md:rounded-lg lg:px-12"
+      max-w-screen-2xl md:rounded-lg lg:px-12 xl:px-24 xl:pt-24"
       >
         <div className="absolute bg-hero-bg-pattern sm:left-10 md:left-1/3 xl:left-1/2 inset-0 bg-no-repeat"></div>
 
         <div className="flex flex-col items-center lg:items-start gap-y-6 text-center lg:text-left">
-          <h1 className="max-w-72 text-white text-2xl font-medium md:text-4xl md:max-w-96">
+          <h1 className="max-w-72 text-white text-2xl font-medium md:text-4xl xl:text-5xl md:max-w-96 xl:max-w-[500px] xl:leading-tight">
             Award-winning custom designs and digital branding solutions
           </h1>
-          <p className="max-w-64 text-white text-sm tracking-wide leading-6 md:max-w-prose lg:max-w-96">
+          <p className="max-w-64 text-white text-sm tracking-wide leading-6 md:max-w-prose lg:max-w-96 xl:text-base xl:max-w-[450px]">
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
