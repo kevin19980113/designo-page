@@ -26,7 +26,7 @@ export default function ProductCard({
     return <Skeleton className="w-full h-[300px] lg:h-[500px] animate-pulse" />;
   return (
     <Link
-      className="w-full flex flex-col tiems-center bg-lightestpeach border border-black/10 rounded-lg
+      className="w-full flex lg:h-auto lg:self-stretch flex-col tiems-center bg-lightestpeach border border-black/10 rounded-lg
     md:flex-row lg:flex-col hover:bg-peach group"
       href="/contact"
       onClick={() => {
