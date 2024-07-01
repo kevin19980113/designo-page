@@ -17,7 +17,7 @@ export default function Footer() {
       <MaxwidthWrapper className="absolute top-0 -translate-y-1/2 -translate-x-1/2 left-1/2 z-20">
         <div
           className="relative bg-peach flex flex-col lg:flex-row lg:justify-between items-center gap-y-6 rounded-lg px-4 
-          lg:px-20 py-14 text-white w-full bg-[url('/assets/shared/desktop/bg-pattern-three-circles.svg')] bg-repeat"
+          lg:px-20 py-14 text-white w-full bg-action-pattern bg-repeat bg-center"
         >
           <div className="flex flex-col items-center text-center lg:text-left lg:items-start gap-y-6">
             <div className="text-3xl md:text-4xl font-medium max-w-52 md:max-w-64 tracking-wide">

@@ -28,7 +28,7 @@ export default function Hero() {
               buttonVariants(),
               "bg-white text-black hover:bg-lightpeach hover:text-white mb-[230px] md:mb-[400px] lg:mb-20 px-8 z-10"
             )}
-            href="/web-design"
+            href="/products/web-design"
           >
             LEARN MORE
           </Link>

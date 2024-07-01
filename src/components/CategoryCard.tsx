@@ -12,7 +12,7 @@ export default function CategoryCard({
 }) {
   return (
     <Link
-      href={slug}
+      href={`/products/${slug}`}
       key={title}
       className={`relative w-full py-20 md:py-16 lg:py-24 lg:h-full md:h-48 rounded-lg bg-no-repeat bg-center bg-cover group ${
         slug === "/web-design"

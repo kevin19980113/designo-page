@@ -31,6 +31,7 @@ const config = {
       colors: {
         peach: "#E7816B",
         lightpeach: "#FFAD9B",
+        lightestpeach: "#fff3ee",
         darkgrey: "#333136",
         lightgery: "#F1F3F5",
         black: "#1D1C1E",
@@ -101,6 +102,8 @@ const config = {
           "url('/assets/home/desktop/image-graphic-design.jpg')",
         "hero-bg-pattern":
           "url('/assets/home/desktop/bg-pattern-hero-home.svg')",
+        "action-pattern":
+          "url('/assets/shared/desktop/bg-pattern-call-to-action.svg')",
       },
     },
   },
