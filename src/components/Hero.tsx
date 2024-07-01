@@ -26,7 +26,7 @@ export default function Hero() {
           <Link
             className={cn(
               buttonVariants(),
-              "bg-white text-black hover:bg-lightpeach hover:text-white mb-[230px] md:mb-[400px] lg:mb-20 px-8 z-10"
+              "mb-[230px] md:mb-[400px] lg:mb-20 px-8 z-10"
             )}
             href="/products/web-design"
           >

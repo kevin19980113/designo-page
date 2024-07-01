@@ -15,7 +15,7 @@ export default function AboutCard({
     <MaxwidthWrapper className={`px-0 ${className}`}>
       <div className="w-full grid grid-cols-1 lg:grid-cols-5 items-center">
         <div
-          className={`w-full h-[300px] lg:h-full bg-cover bg-center bg-no-repeat md:rounded-t-lg 
+          className={`w-full h-[300px] lg:h-auto lg:self-stretch bg-cover bg-center bg-no-repeat md:rounded-t-lg 
           lg:col-span-2 ${
             index === 1
               ? "lg:rounded-l-lg lg:rounded-r-none"

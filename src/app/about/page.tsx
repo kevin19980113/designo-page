@@ -1,5 +1,6 @@
 import AboutCard from "@/components/AboutCard";
 import Locations from "@/components/Locations";
+import MaxwidthWrapper from "@/components/MaxwidthWrapper";
 import PageHeader from "@/components/PageHeader";
 import { about } from "@/lib/data";
 
@@ -19,7 +20,11 @@ export default function AboutPage() {
         descriptions={about[0].description}
         index={1}
       />
-      <Locations />
+
+      <MaxwidthWrapper>
+        <Locations />
+      </MaxwidthWrapper>
+
       <AboutCard
         title={about[1].title}
         descriptions={about[1].description}

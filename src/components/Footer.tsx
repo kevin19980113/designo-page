@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import MaxwidthWrapper from "./MaxwidthWrapper";
 import { buttonVariants } from "./ui/button";
@@ -10,37 +12,41 @@ import { FaYoutube } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaPinterest } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
-  return (
-    <div className="mt-12 relative">
-      <MaxwidthWrapper className="absolute top-0 -translate-y-1/2 -translate-x-1/2 left-1/2 z-20">
-        <div
-          className="relative bg-peach flex flex-col lg:flex-row lg:justify-between items-center gap-y-6 rounded-lg px-4 
-          lg:px-20 py-14 text-white w-full bg-action-pattern bg-repeat bg-center"
-        >
-          <div className="flex flex-col items-center text-center lg:text-left lg:items-start gap-y-6">
-            <div className="text-3xl md:text-4xl font-medium max-w-52 md:max-w-64 tracking-wide">
-              Let&apos;s talk about your project
-            </div>
-            <p className="text-base max-w-96">
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
-          </div>
-          <Link
-            className={cn(
-              buttonVariants(),
-              "bg-white text-black hover:bg-lightpeach hover:text-white z-20"
-            )}
-            href="/contact"
-          >
-            GET IN TOUCH
-          </Link>
-        </div>
-      </MaxwidthWrapper>
+  const pathName = usePathname();
+  const isContactPage = pathName === "/contact";
 
-      <div className="w-full bg-black pt-56 pb-8 md:pb-16">
+  return (
+    <div className={`${!isContactPage ? "mt-12" : ""} relative`}>
+      {!isContactPage && (
+        <MaxwidthWrapper className="absolute top-0 -translate-y-1/2 -translate-x-1/2 left-1/2 z-20">
+          <div
+            className="relative bg-peach flex flex-col lg:flex-row lg:justify-between items-center gap-y-6 rounded-lg px-4 
+          lg:px-20 py-14 text-white w-full bg-action-pattern bg-repeat bg-center"
+          >
+            <div className="flex flex-col items-center text-center lg:text-left lg:items-start gap-y-6">
+              <div className="text-3xl md:text-4xl font-medium max-w-52 md:max-w-64 tracking-wide">
+                Let&apos;s talk about your project
+              </div>
+              <p className="text-base max-w-96">
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+            </div>
+            <Link className={cn(buttonVariants(), "z-20")} href="/contact">
+              GET IN TOUCH
+            </Link>
+          </div>
+        </MaxwidthWrapper>
+      )}
+
+      <div
+        className={`w-full bg-black  pb-8 md:pb-16 ${
+          isContactPage ? "pt-16" : "pt-56"
+        }`}
+      >
         <MaxwidthWrapper>
           <div className="w-full flex flex-col itmes-center gap-y-6">
             <div className="w-full flex flex-col md:flex-row md:justify-between items-center gap-y-6">
