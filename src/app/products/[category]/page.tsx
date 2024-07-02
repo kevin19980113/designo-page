@@ -3,6 +3,7 @@ import MaxwidthWrapper from "@/components/MaxwidthWrapper";
 import PageHeader from "@/components/PageHeader";
 import ProductReels from "@/components/ProductReels";
 import { categoryProductsData } from "@/lib/data";
+import { notFound } from "next/navigation";
 
 export default function CategoryPage({
   params,
@@ -16,7 +17,7 @@ export default function CategoryPage({
   });
 
   if (!categoryData) {
-    return <div>404</div>;
+    notFound();
   }
 
   const otherCategories = categoryProductsData.filter((category) => {
